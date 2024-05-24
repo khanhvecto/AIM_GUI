@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane layoutX="22.0" layoutY="17.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="89.0" prefWidth="1322.0">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="103.0" onMouseClicked="#clickHomeImage" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../assets/Home.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="150.0" layoutY="5.0" text="Payment">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox fx:id="paymentArea" layoutX="32.0" layoutY="138.0" prefHeight="601.0" prefWidth="1304.0" />
+   </children>
+</AnchorPane>

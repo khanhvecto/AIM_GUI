@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="22.0" layoutY="17.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="89.0" prefWidth="1322.0">
+         <children>
+            <Label layoutX="149.0" layoutY="5.0" text="Delivery Form">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="89.0" fitWidth="92.0" onMouseClicked="#ClickHomeImage" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../assets/Home.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="192.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="982.0">
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="982.0">
+               <children>
+                  <Label prefHeight="80.0" prefWidth="221.0" text="Name:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameLabel" prefHeight="72.0" prefWidth="704.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="982.0">
+               <children>
+                  <Label prefHeight="80.0" prefWidth="221.0" text="Phone:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phoneLabel" prefHeight="72.0" prefWidth="704.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="982.0">
+               <children>
+                  <Label prefHeight="80.0" prefWidth="221.0" text="City:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cityLabel" prefHeight="72.0" prefWidth="704.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutY="240.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="982.0">
+               <children>
+                  <Label prefHeight="80.0" prefWidth="221.0" text="Address:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addressLabel" layoutX="231.0" layoutY="10.0" prefHeight="72.0" prefWidth="704.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="982.0">
+               <children>
+                  <Label prefHeight="80.0" prefWidth="221.0" text="Email:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailLabel" layoutX="231.0" layoutY="10.0" prefHeight="72.0" prefWidth="704.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="982.0">
+               <children>
+                  <Label prefHeight="80.0" prefWidth="221.0" text="Delivery intructions:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="deliveryInstructionsLabel" prefHeight="72.0" prefWidth="704.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="982.0">
+               <children>
+                  <RadioButton fx:id="rushOrderButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="212.0" text="Rush order">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <HBox prefHeight="57.0" prefWidth="312.0" visible="false">
+                     <children>
+                        <Label prefHeight="57.0" prefWidth="67.0" text="Time:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="rushOrderTimeLabel" prefHeight="57.0" prefWidth="169.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="156.0" layoutY="10.0" prefHeight="57.0" prefWidth="598.0" visible="false">
+                     <children>
+                        <Label prefHeight="57.0" prefWidth="158.0" text="Instructions:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="rushOrderInstructionsLabel" prefHeight="57.0" prefWidth="428.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Button fx:id="confirmDeliveryButton" layoutX="374.0" layoutY="557.0" mnemonicParsing="false" onAction="#pressConfirmDeliveryButton" text="Confirm Delivery">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

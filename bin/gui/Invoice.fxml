@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane layoutX="22.0" layoutY="17.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="89.0" prefWidth="1322.0">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="103.0" onMouseClicked="#clickHomeImage" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../assets/Home.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="150.0" layoutY="5.0" text="Invoice">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="itemsPane" layoutX="22.0" layoutY="130.0" prefHeight="619.0" prefWidth="715.0" />
+      <Pane layoutX="758.0" layoutY="130.0" prefHeight="422.0" prefWidth="591.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="591.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="215.0" text="Name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameLabel" layoutX="221.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="380.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="50.0" prefHeight="50.0" prefWidth="591.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="215.0" text="Phone:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="phoneLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="380.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="100.0" prefHeight="50.0" prefWidth="591.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="215.0" text="Email:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailLabel" layoutX="221.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="380.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="150.0" prefHeight="50.0" prefWidth="591.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="215.0" text="City:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cityLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="380.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="200.0" prefHeight="50.0" prefWidth="591.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="215.0" text="Address:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addressLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="380.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="250.0" prefHeight="50.0" prefWidth="591.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="215.0" text="Delivery instruction:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="deliveryInstructionsLabel" layoutX="221.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="380.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="300.0" prefHeight="50.0" prefWidth="591.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="215.0" text="Rush order time:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rushOrderTimeLabel" layoutX="221.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="380.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="350.0" prefHeight="50.0" prefWidth="591.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="215.0" text="Rush order instructions:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rushOrderInstructionsLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="380.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Line endX="100.0" layoutX="1053.0" layoutY="552.0" startX="-100.0" strokeWidth="3.0" />
+      <Pane layoutX="758.0" layoutY="567.0" prefHeight="182.0" prefWidth="591.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="342.0">
+               <children>
+                  <Label prefHeight="54.0" prefWidth="131.0" text="Subtotal:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="subTotalLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="218.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="50.0" prefHeight="50.0" prefWidth="342.0">
+               <children>
+                  <Label prefHeight="54.0" prefWidth="131.0" text="Shipping fees:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="shippingFees" layoutX="134.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="218.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="100.0" prefHeight="50.0" prefWidth="342.0">
+               <children>
+                  <Label prefHeight="54.0" prefWidth="131.0" text="Total:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="218.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button layoutX="369.0" layoutY="72.0" mnemonicParsing="false" onAction="#pressConfirmOrder" text="Confirm Order">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
