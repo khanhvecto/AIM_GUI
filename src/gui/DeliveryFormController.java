@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 public class DeliveryFormController {
@@ -46,6 +47,12 @@ public class DeliveryFormController {
 
     @FXML
     private Button confirmDeliveryButton;
+    
+    @FXML
+    private HBox rushOrderTimePart;
+    
+    @FXML
+    private HBox rushOrderInstructionsPart;
 
     @FXML
     void ClickHomeImage(MouseEvent event) throws Exception{
