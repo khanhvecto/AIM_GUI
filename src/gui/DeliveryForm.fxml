@@ -106,7 +106,7 @@
             </HBox>
             <HBox layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="982.0">
                <children>
-                  <RadioButton fx:id="rushOrderButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="212.0" text="Rush order">
+                  <RadioButton fx:id="rushOrderButton" mnemonicParsing="false" onAction="#chooseRushOrder" prefHeight="57.0" prefWidth="212.0" text="Rush order">
                      <padding>
                         <Insets left="20.0" />
                      </padding>

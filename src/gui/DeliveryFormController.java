@@ -13,6 +13,8 @@ import javafx.stage.Stage;
 
 public class DeliveryFormController {
 	private Stage stage;
+	private boolean isRushOrderVisible = false;
+	
 	
 	public DeliveryFormController(Stage stage) {
 		this.stage = stage;
@@ -76,4 +78,12 @@ public class DeliveryFormController {
 		this.stage.setScene(scene);
     }
 
+    @FXML
+    void chooseRushOrder(ActionEvent event) {
+    	// Show or not show 2 rush order fields
+    	this.isRushOrderVisible = !this.isRushOrderVisible; // Toggle the visibility flag
+        rushOrderInstructionsPart.setVisible(this.isRushOrderVisible);
+        rushOrderTimePart.setVisible(this.isRushOrderVisible);
+    }
+    
 }
